@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.sim/sim_1/synth/timing/xsim/ButtonDebounce_TB_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ButtonDebounce
+INFO: [VRFC 10-311] analyzing module LED_Button
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/sim_1/new/ButtonDebounce_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ButtonDebounce_TB

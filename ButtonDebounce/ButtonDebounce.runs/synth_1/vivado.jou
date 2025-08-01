@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu Jul 31 19:53:38 2025
+# Process ID         : 4940
+# Current directory  : E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.runs/synth_1
+# Command line       : vivado.exe -log ButtonDebounce.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ButtonDebounce.tcl
+# Log file           : E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.runs/synth_1/ButtonDebounce.vds
+# Journal file       : E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.runs/synth_1\vivado.jou
+# Running On         : DESKTOP-I3S8TM1
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 2700X Eight-Core Processor         
+# CPU Frequency      : 3700 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 68670 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 72965 MB
+# Available Virtual  : 51293 MB
+#-----------------------------------------------------------
+source ButtonDebounce.tcl -notrace

@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "C:/Xilinx/2025.1/Vivado/data/rsb/busdef" \
+"../../../../ButtonDebounce.srcs/sources_1/new/ButtonDebounce.v" \
+"../../../../ButtonDebounce.srcs/sources_1/new/Debouncer.v" \
+"../../../../ButtonDebounce.srcs/sources_1/new/LED_Button.v" \
+"../../../../ButtonDebounce.srcs/sim_1/new/ButtonDebounce_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

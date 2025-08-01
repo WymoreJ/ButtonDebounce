@@ -1,0 +1,9 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,,,,,,,
+E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/sim_1/new/ButtonDebounce_TB.v,1754005128,verilog,,,,ButtonDebounce_TB,,,C:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/sources_1/new/ButtonDebounce.v,1754004688,verilog,,E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/sources_1/new/Debouncer.v,,ButtonDebounce,,,C:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/sources_1/new/Debouncer.v,1754004840,verilog,,E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/sources_1/new/LED_Button.v,,Debouncer,,,C:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/sources_1/new/LED_Button.v,1754004838,verilog,,E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/sim_1/new/ButtonDebounce_TB.v,,LED_Button,,,C:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,

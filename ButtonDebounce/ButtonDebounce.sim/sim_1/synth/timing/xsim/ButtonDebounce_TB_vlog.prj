@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "C:/Xilinx/2025.1/Vivado/data/rsb/busdef" \
+"ButtonDebounce_TB_time_synth.v" \
+"../../../../../ButtonDebounce.srcs/sim_1/new/ButtonDebounce_TB.v" \
+
+# Do not sort compile order
+nosort

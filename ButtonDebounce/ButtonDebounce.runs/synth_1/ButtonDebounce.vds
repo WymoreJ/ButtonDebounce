@@ -1,0 +1,239 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu Jul 31 19:53:38 2025
+# Process ID         : 4940
+# Current directory  : E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.runs/synth_1
+# Command line       : vivado.exe -log ButtonDebounce.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ButtonDebounce.tcl
+# Log file           : E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.runs/synth_1/ButtonDebounce.vds
+# Journal file       : E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.runs/synth_1\vivado.jou
+# Running On         : DESKTOP-I3S8TM1
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 2700X Eight-Core Processor         
+# CPU Frequency      : 3700 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 68670 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 72965 MB
+# Available Virtual  : 51293 MB
+#-----------------------------------------------------------
+source ButtonDebounce.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 540.906 ; gain = 247.930
+Command: read_checkpoint -auto_incremental -incremental {E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/utils_1/imports/synth_1/ButtonDebounce.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/utils_1/imports/synth_1/ButtonDebounce.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top ButtonDebounce -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23996
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1250.508 ; gain = 493.309
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'i_clk', assumed default net type 'wire' [E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/sources_1/new/ButtonDebounce.v:32]
+INFO: [Synth 8-11241] undeclared symbol 'i_Button', assumed default net type 'wire' [E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/sources_1/new/ButtonDebounce.v:33]
+INFO: [Synth 8-6157] synthesizing module 'ButtonDebounce' [E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/sources_1/new/ButtonDebounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Debouncer' [E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/sources_1/new/Debouncer.v:23]
+	Parameter DEBOUNCE_LIMIT bound to: 10 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/sources_1/new/Debouncer.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'Debouncer' (0#1) [E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/sources_1/new/Debouncer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LED_Button' [E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/sources_1/new/LED_Button.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LED_Button' (0#1) [E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/sources_1/new/LED_Button.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ButtonDebounce' (0#1) [E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/sources_1/new/ButtonDebounce.v:22]
+WARNING: [Synth 8-3848] Net i_clk in module/entity ButtonDebounce does not have driver. [E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/sources_1/new/ButtonDebounce.v:32]
+WARNING: [Synth 8-3848] Net i_Button in module/entity ButtonDebounce does not have driver. [E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/sources_1/new/ButtonDebounce.v:33]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1356.566 ; gain = 599.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1356.566 ; gain = 599.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1356.566 ; gain = 599.367
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1356.566 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/constrs_1/imports/Verilog Practice/Zybo-Z7.xdc]
+Finished Parsing XDC File [E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/constrs_1/imports/Verilog Practice/Zybo-Z7.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.srcs/constrs_1/imports/Verilog Practice/Zybo-Z7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ButtonDebounce_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ButtonDebounce_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1391.555 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1391.555 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1391.555 ; gain = 634.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1391.555 ; gain = 634.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1391.555 ; gain = 634.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1391.555 ; gain = 634.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1401.164 ; gain = 643.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1569.645 ; gain = 812.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1569.906 ; gain = 812.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1579.492 ; gain = 822.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1814.457 ; gain = 1057.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1814.457 ; gain = 1057.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1814.457 ; gain = 1057.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1814.457 ; gain = 1057.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1814.457 ; gain = 1057.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1814.457 ; gain = 1057.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT3 |     1|
+|3     |FDRE |     2|
+|4     |IBUF |     2|
+|5     |OBUF |     1|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1814.457 ; gain = 1057.258
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1814.457 ; gain = 1022.270
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1814.457 ; gain = 1057.258
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1814.457 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1814.457 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: ea76cfa3
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1814.457 ; gain = 1268.805
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1814.457 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/Verilog Practice/Project_4/ButtonDebounce/ButtonDebounce.runs/synth_1/ButtonDebounce.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file ButtonDebounce_utilization_synth.rpt -pb ButtonDebounce_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 31 19:54:26 2025...
